@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="387.0" prefWidth="743.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafx_login1.FXMLDocumentController">
+   <children>
+      <ImageView fitHeight="387.0" fitWidth="767.0">
+         <image>
+            <Image url="@Images/8659872c9cb877b.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="402.0" prefHeight="387.0" prefWidth="365.0" style="-fx-background-color: #f7786b;">
+         <children>
+            <JFXTextField focusColor="BLACK" labelFloat="true" layoutX="65.0" layoutY="90.0" prefHeight="25.0" prefWidth="221.0" promptText="Phone Number" style="-fx-background-color: #ffffff;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </JFXTextField>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="402.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="387.0" prefWidth="365.0" style="-fx-background-color: #f7786b;">
+         <children>
+            <ImageView fitHeight="26.0" fitWidth="107.0" layoutX="139.0" layoutY="24.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" />
+            <JFXTextField focusColor="BLACK" labelFloat="true" layoutX="66.0" layoutY="110.0" prefHeight="32.0" prefWidth="254.0" promptText="Username" style="-fx-background-color: ffffff;" unFocusColor="BLACK">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </JFXTextField>
+            <JFXPasswordField focusColor="BLACK" labelFloat="true" layoutX="64.0" layoutY="178.0" prefHeight="32.0" prefWidth="262.0" promptText="Password" style="-fx-background-color: ffffff;" unFocusColor="BLACK">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+            </JFXPasswordField>
+            <JFXButton fx:id="Submit" accessibleText="submitButton" buttonType="RAISED" layoutX="106.0" layoutY="272.0" onAction="#handleSubmitButtonAction" prefHeight="40.0" prefWidth="107.0" style="-fx-background-color: #1ac6ff; -fx-border-color: #000000;" text="Submit">
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#f82d2d" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+            </JFXButton>
+            <Label blendMode="MULTIPLY" contentDisplay="TEXT_ONLY" layoutX="151.0" layoutY="17.0" prefHeight="40.0" prefWidth="64.0" style="-fx-background-color: ffffff;" text="Login" textAlignment="CENTER" underline="true">
+               <font>
+                  <Font name="Times New Roman" size="26.0" />
+               </font>
+            </Label>
+            <ImageView layoutX="37.0" layoutY="110.0">
+               <image>
+                  <Image url="@Images/user.png" />
+               </image>
+            </ImageView>
+            <ImageView layoutX="39.0" layoutY="178.0">
+               <image>
+                  <Image url="@Images/lock3.png" />
+               </image>
+            </ImageView>
+            <JFXButton fx:id="close" buttonType="RAISED" cancelButton="true" layoutX="326.0" layoutY="-3.0" mnemonicParsing="false" onMouseClicked="#handleCloseButtonAction" prefHeight="26.0" prefWidth="32.0" ripplerFill="#f22020" style="-fx-background-color: #ffffff; -fx-border-color: #000000;" text="X" />
+            <Label accessibleRole="BUTTON" layoutX="232.0" layoutY="234.0" text="Forget Password" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
